@@ -17,8 +17,6 @@ const SideBar = () => {
         <h1 className="title">CodingRadio</h1>
         
       </div>
-      
-      
       <div className="sidebar-content">
         <SongList />
       </div>

@@ -5,24 +5,24 @@
     position: fixed; /* equivalent to fixed */
     left: 0; /* equivalent to left-0 */
     top: 0; /* equivalent to top-0 */
-    background-color: #1e293b; /* equivalent to bg-slate-900 */
+    background-color: #000000; /* equivalent to bg-slate-900 */
     width: 18%; /* equivalent to w-64 */
-    background-color: #111827; 
+ 
   }
   
   .sidebar-header {
-    padding: 16px; /* equivalent to p-4 */
+    padding: 8px; /* equivalent to p-4 */
     display: flex; /* equivalent to flex */
     align-items: center; /* equivalent to items-center */
     justify-content: center; /* equivalent to justify-center */
     gap: 8px; /* equivalent to gap-2 */
-    /* equivalent to bg-slate-950 */
+  
   }
   
   .logo {
     height: 48px; /* equivalent to h-12 */
     width: 48px; /* equivalent to w-12 */
-    border-radius: 9999px; /* equivalent to rounded-full */
+    border-radius: 50%; /* equivalent to rounded-full */
     object-fit: cover; /* equivalent to object-cover */
   }
   
@@ -36,6 +36,7 @@
   .sidebar-content {
     overflow-y: auto; /* equivalent to overflow-y-auto */
     flex: 1; /* equivalent to flex-1 */
+    margin-top: 0;
   }
   
   /* Hide scrollbar for the .sidebar-content element */
