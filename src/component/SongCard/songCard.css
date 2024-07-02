@@ -2,6 +2,11 @@
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+.song-card:hover .song-title {
+  color: rgb(110, 41, 41);
 }
 
 .image-container {
@@ -46,16 +51,14 @@
 }
 
 .song-info {
-  padding: 16px;
+  padding: 8px;
 }
 
 .song-title {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: bold; 
   color: white;
+  text-align: center;
 }
 
-.song-artist {
-  font-size: 14px;
-  color: #d1d5db;
-}
+

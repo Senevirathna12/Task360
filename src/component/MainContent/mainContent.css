@@ -1,9 +1,10 @@
 .home {
   background-color: #0e1116;
-  margin-right: 0;
-  margin-left: 220px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  margin-left: 220px;
 }
 
 .header {
@@ -11,18 +12,19 @@
   font-weight: 800;
   color: white;
   padding: 16px;
-  margin-left: 32px;
   text-align: left;
 }
 
 .content {
   display: flex;
-  margin-left: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 .left-section {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
 }
 
 .banner-container {
@@ -32,32 +34,26 @@
 
 .banner {
   border-radius: 12px;
-  width: 800px;
-  height: 150px;
-
+  width: 100%;
 }
 
 .section-title {
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   padding: 16px;
   text-align: left;
+  margin-bottom: 16px;
 }
 
 .song-section {
   margin-bottom: 100px;
 }
+
 .song-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
-}
-
-@media (min-width: 640px) {
-  .song-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (min-width: 768px) {
@@ -68,10 +64,11 @@
 }
 
 .right-section {
-  display: flex;
-  flex-direction: column;
-  margin-left: 32px;
-  width: 384px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 16px;
+  margin-left: 50px;
+  margin-right: 0;
 }
 
 .ads-container,
@@ -90,8 +87,8 @@
 
 .ad-image {
   border-radius: 12px;
-  width: 300px;
-  height: 100px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 
@@ -125,64 +122,67 @@
 }
 
 .maker-name:hover {
-  color: #3f3f40;
+  opacity: 0.5;
 }
 
 .maker-details {
   font-size: 14px;
   color: white;
+  text-align: left;
 }
 
 .support-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
 .support-title {
   font-weight: bold;
+  text-align: left;
 }
 
 .support-description {
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-right: 8px;
   text-align: left;
 }
 
 .support-button {
   background-color: #3b82f6;
   padding: 8px;
-  margin-right: 8px;
-  display: flex;
-  justify-content: center;
+  margin: 8px;
   font-weight: bold;
   border-radius: 12px;
-  width: 300px;
+  width: 95%;
   border: 1px solid #333;
   cursor: pointer;
+  text-align: center;
 }
 
 .support-button.donation {
   background-color: #f87171;
 }
-
+ 
 .support-or {
   font-weight: 800;
   padding-top: 16px;
   padding-bottom: 16px;
+  text-align: center;
 }
 
 .support-key {
   font-weight: 800;
   padding-top: 16px;
   cursor: pointer;
+  text-align: center;
 }
 
 .footer {
   color: white;
   font-size: 12px;
   padding-top: 16px;
+  text-align: center;
 }
