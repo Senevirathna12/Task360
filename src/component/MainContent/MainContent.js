@@ -7,7 +7,7 @@ import songsData from "../../data/data";
 import Avatar from "../../assests/images/avatar.jpg";
 import { Link } from "react-router-dom";
 
-const MainContent = ({setSelectedSong}) => {
+const MainContent = ({ setSelectedSong }) => {
   const numberOfAds = 3;
 
   const adElements = Array.from({ length: numberOfAds }, (value, index) => (
@@ -50,12 +50,16 @@ const MainContent = ({setSelectedSong}) => {
           <div className="song-section">
             <div className="song-grid">
               {songsData.map((song, index) => (
-                <SongCard key={index} song={song} setSelectedSong={setSelectedSong} />
+                <SongCard
+                  key={index}
+                  song={song}
+                  setSelectedSong={setSelectedSong}
+                />
               ))}
             </div>
           </div>
         </div>
- 
+
         <div className="right-section">
           <div className="section-title">You might also like 🎁</div>
           <div className="ads-container">{adElements}</div>

@@ -1,16 +1,16 @@
-.home{
-    display: flex;
+.home {
+  display: flex;
 }
 
-.home-content{
-    display: flex;
-    flex-direction: column;
+.home-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .SideBar {
-    width: 18%;
-  }
-  
-  .MainContent {
-    width: 82%;
-  }
+  width: 18%;
+}
+
+.MainContent {
+  width: 82%;
+}

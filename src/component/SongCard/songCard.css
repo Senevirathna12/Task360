@@ -5,7 +5,7 @@
 }
 
 .image-container {
-position: relative;
+  position: relative;
 }
 
 .song-image {
@@ -44,9 +44,6 @@ position: relative;
 .play-button:hover {
   color: red;
 }
-
-
-
 
 .song-info {
   padding: 16px;

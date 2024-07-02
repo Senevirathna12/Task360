@@ -4,7 +4,7 @@
   margin-top: 0;
 }
 
-.song-list-item{
+.song-list-item {
   gap: 10px;
   padding: 5px;
 }
@@ -16,18 +16,21 @@
   display: flex;
   align-items: center;
 }
+.song-button:hover .song-icon {
+  opacity: 0.5;
+}
 
+.song-button:hover .song-name {
+  opacity: 0.5;
+}
 .song-icon {
   color: rgb(255, 255, 255);
 }
 
-
-.song-name{
+.song-name {
   font-size: 30px;
   color: white;
   font-size: 12px;
   margin-left: 8px;
   text-align: left;
 }
-
-
