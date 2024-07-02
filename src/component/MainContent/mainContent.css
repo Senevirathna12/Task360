@@ -1,164 +1,163 @@
 .home {
-    background-color: #0e1116; /* equivalent to bg-slate-800 */
+    background-color: #0e1116;
     margin-right: 0;
     margin-left: 18%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  
-  .header {
-    font-size: 30px; /* equivalent to text-3xl */
-    font-weight: 800; /* equivalent to font-extrabold */
-    color: white; /* equivalent to text-white */
-    padding: 16px; /* equivalent to 1rem */
-    margin-left: 32px; /* equivalent to p-4 */
-  }
-  
-  .content {
-    display: flex; /* equivalent to flex */
-    margin-left: 32px; /* equivalent to ml-4 */
-  }
-  
-  .left-section {
+}
+
+.header {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding: 16px;
+    margin-left: 32px;
+}
+
+.content {
     display: flex;
-    flex-direction: column; /* equivalent to flex-col */
-  }
-  
-  .banner-container {
-    padding: 16px; /* equivalent to p-4 */
+    margin-left: 32px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-container {
+    padding: 16px;
     cursor: pointer;
-  }
-  
-  .banner {
-    border-radius: 12px; /* equivalent to rounded-xl */
-  }
-  
-  .section-title {
-    color: white; /* equivalent to text-white */
-    font-weight: bold; /* equivalent to font-bold */
-    font-size: 18px; /* equivalent to text-lg */
-    padding: 16px; /* equivalent to p-4 */
+}
+
+.banner {
+    border-radius: 12px;
+}
+
+.section-title {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
     text-align: left;
-  }
-  
-  .song-grid {
-    display: grid; /* equivalent to grid */
-    grid-template-columns: repeat(1, 1fr); /* equivalent to grid-cols-1 */
-    gap: 16px; /* equivalent to gap-4 */
-  }
-  
-  @media (min-width: 640px) {
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
+
+@media (min-width: 640px) {
     .song-grid {
-      grid-template-columns: repeat(2, 1fr); /* equivalent to sm:grid-cols-2 */
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .song-grid {
-      grid-template-columns: repeat(4, 1fr); /* equivalent to md:grid-cols-4 */
+        grid-template-columns: repeat(4, 1fr);
     }
-  }
-  
-  .right-section {
+}
+
+.right-section {
     display: flex;
-    flex-direction: column; /* equivalent to flex-col */
-    margin-left: 32px; /* equivalent to ml-8 */
-    width: 384px; /* equivalent to w-96 */
-  }
-  
-  .ads-container, .maker-avatar, .support-section, .footer {
-    padding-bottom: 32px; /* equivalent to pb-8 */
-    padding-top: 16px; /* equivalent to pt-4 */
-    border-top: 1px solid #333; /* equivalent to border-t */
-  }
-  
-  .ad-element {
-    padding: 8px; /* equivalent to p-2 */
-    padding-left: 0; /* equivalent to pl-0 */
-  }
-  
-  .ad-image {
-    border-radius: 12px; /* equivalent to rounded-xl */
-  }
-  
-  .maker-avatar {
-    display: flex; /* equivalent to flex */
-    padding: 8px; /* equivalent to p-2 */
-    padding-left: 0; /* equivalent to pl-0 */
-  }
-  
-  .avatar-image {
-    border-radius: 50%; /* equivalent to rounded-full */
-    width: 48px; /* equivalent to w-12 */
-    height: 48px; /* equivalent to h-12 */
-  }
-  
-  .maker-info {
+    flex-direction: column;
+    margin-left: 32px;
+    width: 384px;
+}
+
+.ads-container, .maker-avatar, .support-section, .footer {
+    padding-bottom: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #333;
+}
+
+.ad-element {
+    padding: 8px;
+    padding-left: 0;
+}
+
+.ad-image {
+    border-radius: 12px;
+}
+
+.maker-avatar {
     display: flex;
-    flex-direction: column; /* equivalent to flex-col */
-    margin-left: 16px; /* equivalent to ml-4 */
-  }
-  
-  .maker-name {
-    font-size: 16px; /* equivalent to text-md */
-    color: white; /* equivalent to text-white */
-    font-weight: bold; /* equivalent to font-bold */
-  }
-  
-  .maker-details {
-    font-size: 14px; /* equivalent to text-sm */
-    color: white; /* equivalent to text-white */
-  }
-  
-  .support-section {
+    padding: 8px;
+    padding-left: 0;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.maker-info {
     display: flex;
-    flex-direction: column; /* equivalent to flex-col */
-    align-items: center; /* equivalent to items-center */
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.maker-name {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.maker-details {
+    font-size: 14px;
+    color: white;
+}
+
+.support-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: white; /* equivalent to text-white */
-  }
-  
-  .support-title {
-    font-weight: bold; /* equivalent to font-bold */
-  }
-  
-  .support-description {
-    padding-top: 16px; /* equivalent to pt-4 */
-    padding-bottom: 16px; /* equivalent to pb-4 */
-  }
-  
-  .support-button {
-    background-color: #3b82f6; /* equivalent to bg-blue-500 */
-    padding: 8px; /* equivalent to p-2 */
-    margin-right: 8px; /* equivalent to mr-2 */
+    color: white;
+}
+
+.support-title {
+    font-weight: bold;
+}
+
+.support-description {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.support-button {
+    background-color: #3b82f6;
+    padding: 8px;
+    margin-right: 8px;
     display: flex;
-    justify-content: center; /* equivalent to justify-center */
-    font-weight: bold; /* equivalent to font-bold */
-    border-radius: 12px; /* equivalent to rounded-xl */
-    width: 100%; /* equivalent to w-full */
-    border: 1px solid #333; /* equivalent to border */
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 12px;
+    width: 100%;
+    border: 1px solid #333;
     cursor: pointer;
-  }
-  
-  .support-button.donation {
-    background-color: #f87171; /* equivalent to bg-rose-500 */
-  }
-  
-  .support-or {
-    font-weight: 800; /* equivalent to font-extrabold */
-    padding-top: 16px; /* equivalent to py-4 */
-    padding-bottom: 16px; /* equivalent to py-4 */
-  }
-  
-  .support-key {
-    font-weight: 800; /* equivalent to font-extrabold */
-    padding-top: 16px; /* equivalent to py-4 */
-  }
-  
-  .footer {
-    color: white; /* equivalent to text-white */
-    font-size: 12px; /* equivalent to text-xs */
-    padding-top: 16px; /* equivalent to pt-4 */
-  }
-  
+}
+
+.support-button.donation {
+    background-color: #f87171;
+}
+
+.support-or {
+    font-weight: 800;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.support-key {
+    font-weight: 800;
+    padding-top: 16px;
+}
+
+.footer {
+    color: white;
+    font-size: 12px;
+    padding-top: 16px;
+}

@@ -1,56 +1,55 @@
 .song-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px; /* equivalent to rounded-lg */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* equivalent to shadow-lg */
-  }
-  
-  .image-container {
-    position: relative;
-  }
-  
-  .song-image {
-    width: 240px; /* equivalent to w-64 */
-    height: 240px; /* equivalent to h-64 */
-    object-fit: cover; /* equivalent to object-cover */
-  }
-  
-  .overlay {
-    position: absolute;
-    inset: 0; /* equivalent to absolute positioning inset-0 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0; /* equivalent to opacity-0 */
-    transition: opacity 0.3s; /* equivalent to transition-opacity duration-300 */
-    background-color: rgba(0, 0, 0, 0.5); /* equivalent to bg-black bg-opacity-50 */
-  }
-  
-  .overlay.hovered {
-    opacity: 1; /* equivalent to opacity-100 */
-  }
-  
-  .play-button {
-    color: white; /* equivalent to text-white */
-    font-size: 32px; /* equivalent to text-4xl */
-    border: none;
-    background: none;
-    outline: none; /* equivalent to focus:outline-none */
-    cursor: pointer;
-  }
-  
-  .song-info {
-    padding: 16px; /* equivalent to px-4 py-2 */
-  }
-  
-  .song-title {
-    font-size: 18px; /* equivalent to text-lg */
-    font-weight: bold; /* equivalent to font-bold */
-    color: white; /* equivalent to text-white */
-  }
-  
-  .song-artist {
-    font-size: 14px; /* equivalent to text-sm */
-    color: #d1d5db; /* equivalent to text-gray-300 */
-  }
-  
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+}
+
+.song-image {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.hovered {
+  opacity: 1;
+}
+
+.play-button {
+  color: white;
+  font-size: 32px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.song-info {
+  padding: 16px;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #d1d5db;
+}
