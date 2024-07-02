@@ -1,39 +1,36 @@
-import React from 'react'
-import './mainContent.css'
+import React from "react";
+import "./mainContent.css";
 import Banner from "../../assests/images/banner.png";
 import Ads from "../../assests/images/ban_2.png";
 import SongCard from "../SongCard/SongCard";
 import songsData from "../../data/data";
 import Avatar from "../../assests/images/avatar.jpg";
+import { Link } from "react-router-dom";
 
 const MainContent = () => {
   const numberOfAds = 3;
 
   const adElements = Array.from({ length: numberOfAds }, (value, index) => (
-    <div
-      key={index}
-      className="ad-element"
-    >
-      <img
-        src={Ads}
-        className="ad-image"
-        alt={`Advertisement ${index + 1}`}
-      />
+    <div key={index} className="ad-element">
+      <img src={Ads} className="ad-image" alt={`Advertisement ${index + 1}`} />
     </div>
   ));
 
   const makersAvatar = Array.from({ length: 1 }, (value, index) => (
-    <div
-      key={index}
-      className="maker-avatar"
-    >
+    <div key={index} className="maker-avatar">
       <img
         src={Avatar}
         className="avatar-image"
         alt={`Maker Avatar ${index + 1}`}
       />
       <div className="maker-info">
-        <span className="maker-name">Amith</span>
+        <Link
+          to="https://www.linkedin.com/in/amith-n-senevirathna/"                 
+          target="_blank"
+          className="maker-name"
+        >
+          Amith N Senevirathna
+        </Link>
         <span className="maker-details">
           Faculty of engineering, University of Ruhuna
         </span>
@@ -42,22 +39,14 @@ const MainContent = () => {
   ));
 
   return (
-    <div >
-      <div className="header">
-        📻 👉️ CodingRadio ⚡️ 🚀
-      </div>
+    <div>
+      <div className="header">📻 👉️ CodingRadio ⚡️ 🚀</div>
       <div className="content">
         <div className="left-section">
           <div className="banner-container">
-            <img
-              src={Banner}
-              className="banner"
-              alt=""
-            />
+            <img src={Banner} className="banner" alt="" />
           </div>
-          <div className="section-title">
-            Pick your poison 🍷
-          </div>
+          <div className="section-title">Pick your poison 🍷</div>
           <div>
             <div className="song-grid">
               {songsData.map((song, index) => (
@@ -68,9 +57,7 @@ const MainContent = () => {
         </div>
 
         <div className="right-section">
-          <div className="section-title">
-            You might also like 🎁
-          </div>
+          <div className="section-title">You might also like 🎁</div>
           <div className="ads-container">{adElements}</div>
           <div className="section-title">Makers 🚀</div>
           <div>{makersAvatar}</div>
@@ -82,13 +69,9 @@ const MainContent = () => {
               This will help us stay up at night and make this app even better.
               Coffee translates to code ☕️
             </div>
-            <div className="support-button coffee">
-              Buy us a coffee
-            </div>
+            <div className="support-button coffee">Buy us a coffee</div>
             <span className="support-or">...or maybe</span>
-            <div className="support-button donation">
-              Make a Donation
-            </div>
+            <div className="support-button donation">Make a Donation</div>
             <span className="support-key">
               🔑 Here's how we plan to use Donations
             </span>
@@ -100,6 +83,6 @@ const MainContent = () => {
       </div>
     </div>
   );
-}
+};
 
-export default MainContent
+export default MainContent;
