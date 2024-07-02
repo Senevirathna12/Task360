@@ -42,7 +42,7 @@ const MainContent = () => {
   ));
 
   return (
-    <div className="home">
+    <div >
       <div className="header">
         📻 👉️ CodingRadio ⚡️ 🚀
       </div>

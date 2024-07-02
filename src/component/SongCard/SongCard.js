@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './songCard.css'
+import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 
 const SongCard = ({song}) => {
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleHover = () => {
     setIsHovered(!isHovered);
@@ -22,12 +23,7 @@ const SongCard = ({song}) => {
           className={`overlay ${isHovered ? 'hovered' : ''}`}
         >
           <button className="play-button">
-            <img
-              width="25"
-              height="25"
-              src="https://img.icons8.com/ios-filled/50/FFFFFF/circled-play.png"
-              alt="Play"
-            />
+           <PlayCircleFilledWhiteIcon  />
           </button>
         </div>
       </div>

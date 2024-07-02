@@ -20,6 +20,7 @@
     padding: 16px;
     font-size: 20px;
     margin-left: 500px;
+    cursor: pointer;
 }
 
 .play-song {

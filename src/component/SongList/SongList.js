@@ -5,17 +5,17 @@ import PlayCircleFilledWhiteOutlinedIcon from "@mui/icons-material/PlayCircleFil
 
 
 const SongList = () => {
-  const [currentSongUrl, setCurrentSongUrl] = React.useState(null);
-  const [isPlaying, setIsPlaying] = React.useState(false);
+  // const [currentSongUrl, setCurrentSongUrl] = React.useState(null);
+  // const [isPlaying, setIsPlaying] = React.useState(false);
 
-  const playSong = (soundUrl) => {
-    setCurrentSongUrl(soundUrl);
-    setIsPlaying(true);
-  };
+  // const playSong = (soundUrl) => {
+  //   setCurrentSongUrl(soundUrl);
+  //   setIsPlaying(true);
+  // };
 
-  const handleEnded = () => {
-    setIsPlaying(false);
-  };
+  // const handleEnded = () => {
+  //   setIsPlaying(false);
+  // };
 
   return (
     <div>

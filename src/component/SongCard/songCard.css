@@ -10,8 +10,8 @@
 }
 
 .song-image {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -24,6 +24,7 @@
   opacity: 0;
   transition: opacity 0.3s;
   background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px; /* Ensure overlay matches song-card border-radius */
 }
 
 .overlay.hovered {
@@ -37,7 +38,12 @@
   background: none;
   outline: none;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 .song-info {
   padding: 16px;
