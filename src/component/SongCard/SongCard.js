@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './songCard.css'
 import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 
-const SongCard = ({song}) => {
+const SongCard = ({song, setSelectedSong}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const toggleHover = () => {
@@ -22,8 +22,8 @@ const SongCard = ({song}) => {
         <div
           className={`overlay ${isHovered ? 'hovered' : ''}`}
         >
-          <button className="play-button">
-           <PlayCircleFilledWhiteIcon  />
+          <button className="play-button" onClick={() => setSelectedSong(song)} >
+           <PlayCircleFilledWhiteIcon />
           </button>
         </div>
       </div>

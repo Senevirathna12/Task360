@@ -3,7 +3,8 @@ import "./sideBar.css";
 import logo from "../../assests/images/logo_128.png";
 import SongList from "../SongList/SongList";
 
-const SideBar = () => {
+const SideBar = ({setSelectedSong}) => {
+  
   return (
     <div className="sidebar">
       <div className="sidebar-header">
@@ -11,7 +12,7 @@ const SideBar = () => {
         <h1 className="title">CodingRadio</h1>
       </div>
       <div className="sidebar-content">
-        <SongList />
+        <SongList setSelectedSong={setSelectedSong}/>
       </div>
     </div>
   );

@@ -19,12 +19,17 @@
     justify-content: center;
     padding: 16px;
     font-size: 20px;
-    margin-left: 500px;
+    margin-left: 48%;
     cursor: pointer;
+    position: fixed;
 }
 
 .play-song {
     color: red;
+}
+
+.play-song:hover{
+    color: greenyellow;
 }
 
 .footer-content-left {
