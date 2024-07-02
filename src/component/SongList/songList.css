@@ -1,0 +1,37 @@
+.song-item {
+    display: flex;
+    padding: 10px; /* Equivalent to p-4 */
+    gap: 10px; /* Equivalent to gap-4 */
+    color: white; /* Equivalent to text-white */
+  }
+  
+  .song-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .song-icon{
+    color: rgb(255, 255, 255);
+  }
+  
+  .song-title {
+    margin: 0;
+    margin-left: 8px; /* Add some spacing between the icon and title */
+    font-size: 10px;
+    color: rgb(150, 149, 149);
+    text-align: left;
+    
+  }
+  
+  .song-list {
+    margin-left: 0;
+    padding-left: 0; /* Ensure no padding on the left */
+  }
+   
+   
+  
+  

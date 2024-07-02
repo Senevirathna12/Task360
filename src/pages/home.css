@@ -1,0 +1,8 @@
+.home{
+    display: flex;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+}
