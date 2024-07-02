@@ -41,9 +41,9 @@
   color: white;
   font-weight: bold;
   font-size: 20px;
-  padding: 16px;
+  padding: 8px;
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .song-section {
@@ -67,7 +67,7 @@
   width: 100%;
   max-width: 300px;
   margin-top: 16px;
-  margin-left: 50px;
+  margin-left: 60px;
   margin-right: 0;
 }
 
@@ -81,14 +81,15 @@
 }
 
 .ad-element {
-  padding: 8px;
+  padding: 4px;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .ad-image {
   border-radius: 12px;
   width: 100%;
-  height: auto;
+  height: 100px;
   cursor: pointer;
 }
 
@@ -165,7 +166,7 @@
 .support-button.donation {
   background-color: #f87171;
 }
- 
+
 .support-or {
   font-weight: 800;
   padding-top: 16px;

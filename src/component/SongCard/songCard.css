@@ -2,7 +2,6 @@
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  
 }
 
 .song-card:hover .song-title {
@@ -56,9 +55,7 @@
 
 .song-title {
   font-size: 15px;
-  font-weight: bold; 
+  font-weight: bold;
   color: white;
   text-align: center;
 }
-
-
