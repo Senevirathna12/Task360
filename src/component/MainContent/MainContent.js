@@ -25,7 +25,7 @@ const MainContent = () => {
       />
       <div className="maker-info">
         <Link
-          to="https://www.linkedin.com/in/amith-n-senevirathna/"                 
+          to="https://www.linkedin.com/in/amith-n-senevirathna/"
           target="_blank"
           className="maker-name"
         >
@@ -47,7 +47,7 @@ const MainContent = () => {
             <img src={Banner} className="banner" alt="" />
           </div>
           <div className="section-title">Pick your poison 🍷</div>
-          <div>
+          <div className="song-section">
             <div className="song-grid">
               {songsData.map((song, index) => (
                 <SongCard key={index} song={song} />
@@ -55,7 +55,7 @@ const MainContent = () => {
             </div>
           </div>
         </div>
-
+ 
         <div className="right-section">
           <div className="section-title">You might also like 🎁</div>
           <div className="ads-container">{adElements}</div>

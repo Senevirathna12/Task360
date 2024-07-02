@@ -1,8 +1,12 @@
-.song-item {
-  display: flex;
-  padding: 10px;
+.song-list {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.song-list-item{
   gap: 10px;
-  color: white;
+  padding: 5px;
 }
 
 .song-button {
@@ -17,15 +21,13 @@
   color: rgb(255, 255, 255);
 }
 
-.song-title {
-  margin: 0;
+
+.song-name{
+  font-size: 30px;
+  color: white;
+  font-size: 12px;
   margin-left: 8px;
-  font-size: 10px;
-  color: rgb(150, 149, 149);
   text-align: left;
 }
 
-.song-list {
-  margin-left: 0;
-  padding-left: 0;
-}
+
